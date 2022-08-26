@@ -14,4 +14,16 @@ class User: Decodable {
     var email: String
     var phone: String
     var website: String
+    
+    var albums = [Album]()
+    
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case username
+        case email
+        case phone
+        case website
+    }
+    
 }

@@ -36,7 +36,11 @@ struct AuthorDetail: View {
                 
             }
             LazyVGrid (columns: [GridItem(.flexible()), GridItem(.flexible())]) {
-                
+                ForEach(viewModel.author.albums, id: \.id) { album in
+                    ForEach(album.photos, id: \.id) { photo in
+                        AsyncImage(url: URL(string: photo.thumbnailUrl)!)
+                    }
+                }
             }
         }
     }

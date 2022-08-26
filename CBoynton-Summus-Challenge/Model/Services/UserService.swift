@@ -30,9 +30,39 @@ class UserService {
                 userLookup[user.id] = user
             }
             
-            self.userLookup = userLookup
+            ApiClient.Instance.getAlbums { albums, errorString in
+                if let errorString = errorString {
+                    print(errorString)
+                    return;
+                }
+                
+                var albumLookup = [Int:Album]()
+                
+                albums.forEach { album in
+                    albumLookup[album.id] = album
+                    if let user = userLookup[album.userId] {
+                        user.albums.append(album)
+                    }
+                }
+                
+                ApiClient.Instance.getPhotos { photos, errorString in
+                    if let errorString = errorString {
+                        print(errorString)
+                        return;
+                    }
+                    
+                    photos.forEach { photo in
+                        if let album = albumLookup[photo.albumId] {
+                            album.photos.append(photo)
+                        }
+                    }
+                    
+                    self.userLookup = userLookup
+                    completion(userLookup)
+                }
+                
+            }
             
-            completion(userLookup)
         }
     }
 }

@@ -16,7 +16,6 @@
 		B9C55F8728B8FC9B00408846 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8628B8FC9B00408846 /* Album.swift */; };
 		B9C55F8928B8FCA200408846 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8828B8FCA200408846 /* Photo.swift */; };
 		B9C55F8B28B8FCD100408846 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8A28B8FCD100408846 /* ApiClient.swift */; };
-		B9C55F8E28B909C400408846 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8D28B909C400408846 /* DataStore.swift */; };
 		B9C55F9028B90E2600408846 /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8F28B90E2600408846 /* PostRow.swift */; };
 		B9C55F9228B90FA600408846 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F9128B90FA600408846 /* PostList.swift */; };
 		B9C55F9428B912ED00408846 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F9328B912ED00408846 /* PostListViewModel.swift */; };
@@ -62,7 +61,6 @@
 		B9C55F8628B8FC9B00408846 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		B9C55F8828B8FCA200408846 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B9C55F8A28B8FCD100408846 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		B9C55F8D28B909C400408846 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		B9C55F8F28B90E2600408846 /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
 		B9C55F9128B90FA600408846 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		B9C55F9328B912ED00408846 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
@@ -76,6 +74,7 @@
 		B9DE221928B937ED009DF98D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B9DE221B28B93D47009DF98D /* PostRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowViewModel.swift; sourceTree = "<group>"; };
 		B9DE221D28B9485F009DF98D /* CommentRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRowViewModel.swift; sourceTree = "<group>"; };
+		B9DE221F28B94A3D009DF98D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +129,7 @@
 				B9C55F4E28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift */,
 				B9C55F5228B7F02900408846 /* Assets.xcassets */,
 				B9C55F5428B7F02900408846 /* Preview Content */,
+				B9DE221F28B94A3D009DF98D /* README.md */,
 			);
 			path = "CBoynton-Summus-Challenge";
 			sourceTree = "<group>";
@@ -167,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				B9C55F8A28B8FCD100408846 /* ApiClient.swift */,
-				B9C55F8D28B909C400408846 /* DataStore.swift */,
 				B9DE221728B93797009DF98D /* PostService.swift */,
 				B9DE221928B937ED009DF98D /* UserService.swift */,
 			);
@@ -181,8 +180,8 @@
 				B9C55F8F28B90E2600408846 /* PostRow.swift */,
 				B9C55F9528B919BF00408846 /* PostDetail.swift */,
 				B9DE220F28B92E16009DF98D /* CommentRow.swift */,
-				B9DE220D28B92DBF009DF98D /* AuthorDetail.swift */,
 				B9DE221128B931C0009DF98D /* AuthorLabel.swift */,
+				B9DE220D28B92DBF009DF98D /* AuthorDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,7 +342,6 @@
 				B9C55F9428B912ED00408846 /* PostListViewModel.swift in Sources */,
 				B9DE221C28B93D47009DF98D /* PostRowViewModel.swift in Sources */,
 				B9C55F9628B919BF00408846 /* PostDetail.swift in Sources */,
-				B9C55F8E28B909C400408846 /* DataStore.swift in Sources */,
 				B9DE221A28B937ED009DF98D /* UserService.swift in Sources */,
 				B9C55F9028B90E2600408846 /* PostRow.swift in Sources */,
 				B9C55F8728B8FC9B00408846 /* Album.swift in Sources */,
