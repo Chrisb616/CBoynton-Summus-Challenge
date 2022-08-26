@@ -1,8 +1,6 @@
 #  Christopher Boynton - Summus Takehome
 
-This represents about 6 hours of work, all that I had to spare for this challenge. Below I will go into some of the decisions I made and what I would do next if I had more time. This is my first experience with SwiftUI in any larger practical purpose. Previously all I had to done was small exercises.
-
-Overall, I am satisfied with my work considering it's my first attempt at a SwiftUI project. I learned a lot over the course of building it, and I look forward to hearing feedback and criticisms on my work.
+This represents about 6 hours of work, all that I had to spare for this challenge. Below I will go into some of the decisions I made and what I would do next if I had more time. This is my first experience with SwiftUI in any larger practical purpose. Overall, I am satisfied with my work for a first attempt with the time contstraints. I learned a lot over the course of building it, and I look forward to hearing feedback and criticisms on my work.
 
 ## Project Structure
 
