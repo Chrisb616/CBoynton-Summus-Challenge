@@ -11,9 +11,12 @@
 		B9C55F5128B7F02700408846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F5028B7F02700408846 /* ContentView.swift */; };
 		B9C55F5328B7F02900408846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C55F5228B7F02900408846 /* Assets.xcassets */; };
 		B9C55F5628B7F02900408846 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C55F5528B7F02900408846 /* Preview Assets.xcassets */; };
-		B9C55F6028B7F02900408846 /* CBoynton_Summus_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F5F28B7F02900408846 /* CBoynton_Summus_ChallengeTests.swift */; };
-		B9C55F6A28B7F02900408846 /* CBoynton_Summus_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F6928B7F02900408846 /* CBoynton_Summus_ChallengeUITests.swift */; };
-		B9C55F6C28B7F02900408846 /* CBoynton_Summus_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F6B28B7F02900408846 /* CBoynton_Summus_ChallengeUITestsLaunchTests.swift */; };
+		B9C55F8128B8FAE200408846 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8028B8FAE200408846 /* Post.swift */; };
+		B9C55F8328B8FC7100408846 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8228B8FC7100408846 /* User.swift */; };
+		B9C55F8528B8FC7D00408846 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8428B8FC7D00408846 /* Comment.swift */; };
+		B9C55F8728B8FC9B00408846 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8628B8FC9B00408846 /* Album.swift */; };
+		B9C55F8928B8FCA200408846 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8828B8FCA200408846 /* Photo.swift */; };
+		B9C55F8B28B8FCD100408846 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8A28B8FCD100408846 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +43,13 @@
 		B9C55F5228B7F02900408846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9C55F5528B7F02900408846 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B9C55F5B28B7F02900408846 /* CBoynton-Summus-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CBoynton-Summus-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9C55F5F28B7F02900408846 /* CBoynton_Summus_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBoynton_Summus_ChallengeTests.swift; sourceTree = "<group>"; };
 		B9C55F6528B7F02900408846 /* CBoynton-Summus-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CBoynton-Summus-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9C55F6928B7F02900408846 /* CBoynton_Summus_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBoynton_Summus_ChallengeUITests.swift; sourceTree = "<group>"; };
-		B9C55F6B28B7F02900408846 /* CBoynton_Summus_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBoynton_Summus_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B9C55F8028B8FAE200408846 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B9C55F8228B8FC7100408846 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B9C55F8428B8FC7D00408846 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		B9C55F8628B8FC9B00408846 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B9C55F8828B8FCA200408846 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B9C55F8A28B8FCD100408846 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				B9C55F4D28B7F02700408846 /* CBoynton-Summus-Challenge */,
-				B9C55F5E28B7F02900408846 /* CBoynton-Summus-ChallengeTests */,
-				B9C55F6828B7F02900408846 /* CBoynton-Summus-ChallengeUITests */,
 				B9C55F4C28B7F02700408846 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +98,9 @@
 		B9C55F4D28B7F02700408846 /* CBoynton-Summus-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				B9C55F7A28B8F86100408846 /* Model */,
+				B9C55F7D28B8F89000408846 /* View */,
+				B9C55F8C28B908DC00408846 /* ViewModel */,
 				B9C55F4E28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift */,
 				B9C55F5028B7F02700408846 /* ContentView.swift */,
 				B9C55F5228B7F02900408846 /* Assets.xcassets */,
@@ -110,21 +117,47 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B9C55F5E28B7F02900408846 /* CBoynton-Summus-ChallengeTests */ = {
+		B9C55F7A28B8F86100408846 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B9C55F5F28B7F02900408846 /* CBoynton_Summus_ChallengeTests.swift */,
+				B9C55F7C28B8F88200408846 /* Services */,
+				B9C55F7B28B8F87700408846 /* ApiModel */,
 			);
-			path = "CBoynton-Summus-ChallengeTests";
+			path = Model;
 			sourceTree = "<group>";
 		};
-		B9C55F6828B7F02900408846 /* CBoynton-Summus-ChallengeUITests */ = {
+		B9C55F7B28B8F87700408846 /* ApiModel */ = {
 			isa = PBXGroup;
 			children = (
-				B9C55F6928B7F02900408846 /* CBoynton_Summus_ChallengeUITests.swift */,
-				B9C55F6B28B7F02900408846 /* CBoynton_Summus_ChallengeUITestsLaunchTests.swift */,
+				B9C55F8628B8FC9B00408846 /* Album.swift */,
+				B9C55F8428B8FC7D00408846 /* Comment.swift */,
+				B9C55F8828B8FCA200408846 /* Photo.swift */,
+				B9C55F8028B8FAE200408846 /* Post.swift */,
+				B9C55F8228B8FC7100408846 /* User.swift */,
 			);
-			path = "CBoynton-Summus-ChallengeUITests";
+			path = ApiModel;
+			sourceTree = "<group>";
+		};
+		B9C55F7C28B8F88200408846 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B9C55F8A28B8FCD100408846 /* ApiClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B9C55F7D28B8F89000408846 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C55F8C28B908DC00408846 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9C55F8928B8FCA200408846 /* Photo.swift in Sources */,
+				B9C55F8528B8FC7D00408846 /* Comment.swift in Sources */,
+				B9C55F8328B8FC7100408846 /* User.swift in Sources */,
+				B9C55F8B28B8FCD100408846 /* ApiClient.swift in Sources */,
+				B9C55F8128B8FAE200408846 /* Post.swift in Sources */,
 				B9C55F5128B7F02700408846 /* ContentView.swift in Sources */,
 				B9C55F4F28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift in Sources */,
+				B9C55F8728B8FC9B00408846 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +305,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C55F6028B7F02900408846 /* CBoynton_Summus_ChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C55F6C28B7F02900408846 /* CBoynton_Summus_ChallengeUITestsLaunchTests.swift in Sources */,
-				B9C55F6A28B7F02900408846 /* CBoynton_Summus_ChallengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
