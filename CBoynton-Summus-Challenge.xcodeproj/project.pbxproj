@@ -29,6 +29,7 @@
 		B9DE221A28B937ED009DF98D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE221928B937ED009DF98D /* UserService.swift */; };
 		B9DE221C28B93D47009DF98D /* PostRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE221B28B93D47009DF98D /* PostRowViewModel.swift */; };
 		B9DE221E28B9485F009DF98D /* CommentRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE221D28B9485F009DF98D /* CommentRowViewModel.swift */; };
+		B9DE222228B957FF009DF98D /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE222128B957FF009DF98D /* UIScreenExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		B9DE221B28B93D47009DF98D /* PostRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowViewModel.swift; sourceTree = "<group>"; };
 		B9DE221D28B9485F009DF98D /* CommentRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRowViewModel.swift; sourceTree = "<group>"; };
 		B9DE221F28B94A3D009DF98D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B9DE222128B957FF009DF98D /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		B9C55F4D28B7F02700408846 /* CBoynton-Summus-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				B9DE222028B957EF009DF98D /* Extensions */,
 				B9C55F7A28B8F86100408846 /* Model */,
 				B9C55F7D28B8F89000408846 /* View */,
 				B9C55F8C28B908DC00408846 /* ViewModel */,
@@ -196,6 +199,14 @@
 				B9DE221528B93342009DF98D /* AuthorDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9DE222028B957EF009DF98D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE222128B957FF009DF98D /* UIScreenExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +346,7 @@
 				B9C55F8328B8FC7100408846 /* User.swift in Sources */,
 				B9C55F8B28B8FCD100408846 /* ApiClient.swift in Sources */,
 				B9C55F8128B8FAE200408846 /* Post.swift in Sources */,
+				B9DE222228B957FF009DF98D /* UIScreenExtension.swift in Sources */,
 				B9DE221028B92E16009DF98D /* CommentRow.swift in Sources */,
 				B9DE221828B93797009DF98D /* PostService.swift in Sources */,
 				B9C55F4F28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift in Sources */,

@@ -13,8 +13,15 @@ struct PostRow: View {
     var body: some View {
         VStack {
             Text(viewModel.author?.name ?? "User Not Found")
-            Text(viewModel.post.title).bold()
-            Text(viewModel.post.body)
+                .frame(maxWidth: .infinity, alignment: .topLeading)
+                .font(.system(size:12))
+                .textCase(.uppercase)
+            Text(viewModel.post.title)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .topLeading)
+                .font(.system(size:18))
+            Text(viewModel.post.body).frame(maxWidth: .infinity, alignment: .topLeading)
+                .font(.system(size:14))
         }
     }
 }

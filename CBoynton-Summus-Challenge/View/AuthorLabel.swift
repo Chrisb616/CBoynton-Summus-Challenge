@@ -13,7 +13,7 @@ struct AuthorLabel: View {
     var body: some View {
         HStack {
             Text (author?.name ?? "User Not Found")
-            Text (author != nil ? "View Details" : "")
+            Text (author != nil ? "View author's profile" : "")
         }
     }
 }
