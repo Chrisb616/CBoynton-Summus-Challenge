@@ -16,13 +16,13 @@ class ApiClient {
     private init() {}
     
     // MARK: - Properties
-    let baseUrlString = "https://jsonplaceholder.typicode.com/"
+    private let baseUrlString = "https://jsonplaceholder.typicode.com/"
     
-    let postsEndpoint = "posts"
-    let commentsEndpoint = "comments"
-    let usersEndpoint = "users"
-    let albumsEndpoint = "albums"
-    let photosEndpoint = "photos"
+    private let postsEndpoint = "posts"
+    private let commentsEndpoint = "comments"
+    private let usersEndpoint = "users"
+    private let albumsEndpoint = "albums"
+    private let photosEndpoint = "photos"
     
     // MARK: - GET Methods
     func getPosts(completion: @escaping ([Post], ErrorString?) -> ()) {
