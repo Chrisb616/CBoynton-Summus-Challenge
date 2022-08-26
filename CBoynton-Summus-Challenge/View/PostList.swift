@@ -14,20 +14,18 @@ struct PostList: View {
         NavigationView {
             List(viewModel.posts) { post in
                 NavigationLink {
-                
-                PostDetail()
-
+                    PostDetail(
+                        viewModel: PostDetailViewModel(
+                            post: post,
+                            author: viewModel.author(forPost: post),
+                            comments: viewModel.comments(forPost: post)
+                        )
+                    )
                 } label: {
-                    PostRow(post: post)
+                    PostRow(post: post, author: viewModel.author(forPost: post))
                 }
                 .navigationTitle("CBoynton Takehome")
             }
         }
-    }
-}
-
-struct PostList_Previews: PreviewProvider {
-    static var previews: some View {
-        PostList(viewModel: PostListViewModel())
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct CBoynton_Summus_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            PostsList(postsViewModel: PostsViewModel())
+            PostList(viewModel: PostListViewModel())
         }
     }
 }

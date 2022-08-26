@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B9C55F4F28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F4E28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift */; };
-		B9C55F5128B7F02700408846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F5028B7F02700408846 /* ContentView.swift */; };
 		B9C55F5328B7F02900408846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C55F5228B7F02900408846 /* Assets.xcassets */; };
 		B9C55F5628B7F02900408846 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C55F5528B7F02900408846 /* Preview Assets.xcassets */; };
 		B9C55F8128B8FAE200408846 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F8028B8FAE200408846 /* Post.swift */; };
@@ -22,6 +21,11 @@
 		B9C55F9228B90FA600408846 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F9128B90FA600408846 /* PostList.swift */; };
 		B9C55F9428B912ED00408846 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F9328B912ED00408846 /* PostListViewModel.swift */; };
 		B9C55F9628B919BF00408846 /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F9528B919BF00408846 /* PostDetail.swift */; };
+		B9C55F9828B9207900408846 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C55F9728B9207900408846 /* PostDetailViewModel.swift */; };
+		B9DE220E28B92DBF009DF98D /* AuthorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE220D28B92DBF009DF98D /* AuthorDetail.swift */; };
+		B9DE221028B92E16009DF98D /* CommentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE220F28B92E16009DF98D /* CommentRow.swift */; };
+		B9DE221228B931C0009DF98D /* AuthorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE221128B931C0009DF98D /* AuthorLabel.swift */; };
+		B9DE221628B93342009DF98D /* AuthorDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE221528B93342009DF98D /* AuthorDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +48,6 @@
 /* Begin PBXFileReference section */
 		B9C55F4B28B7F02700408846 /* CBoynton-Summus-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CBoynton-Summus-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C55F4E28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBoynton_Summus_ChallengeApp.swift; sourceTree = "<group>"; };
-		B9C55F5028B7F02700408846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B9C55F5228B7F02900408846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9C55F5528B7F02900408846 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B9C55F5B28B7F02900408846 /* CBoynton-Summus-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CBoynton-Summus-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +63,11 @@
 		B9C55F9128B90FA600408846 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		B9C55F9328B912ED00408846 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		B9C55F9528B919BF00408846 /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
+		B9C55F9728B9207900408846 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		B9DE220D28B92DBF009DF98D /* AuthorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetail.swift; sourceTree = "<group>"; };
+		B9DE220F28B92E16009DF98D /* CommentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRow.swift; sourceTree = "<group>"; };
+		B9DE221128B931C0009DF98D /* AuthorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorLabel.swift; sourceTree = "<group>"; };
+		B9DE221528B93342009DF98D /* AuthorDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +120,6 @@
 				B9C55F7D28B8F89000408846 /* View */,
 				B9C55F8C28B908DC00408846 /* ViewModel */,
 				B9C55F4E28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift */,
-				B9C55F5028B7F02700408846 /* ContentView.swift */,
 				B9C55F5228B7F02900408846 /* Assets.xcassets */,
 				B9C55F5428B7F02900408846 /* Preview Content */,
 			);
@@ -163,6 +170,9 @@
 				B9C55F8F28B90E2600408846 /* PostRow.swift */,
 				B9C55F9128B90FA600408846 /* PostList.swift */,
 				B9C55F9528B919BF00408846 /* PostDetail.swift */,
+				B9DE220F28B92E16009DF98D /* CommentRow.swift */,
+				B9DE220D28B92DBF009DF98D /* AuthorDetail.swift */,
+				B9DE221128B931C0009DF98D /* AuthorLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				B9C55F9328B912ED00408846 /* PostListViewModel.swift */,
+				B9C55F9728B9207900408846 /* PostDetailViewModel.swift */,
+				B9DE221528B93342009DF98D /* AuthorDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -311,13 +323,17 @@
 				B9C55F8328B8FC7100408846 /* User.swift in Sources */,
 				B9C55F8B28B8FCD100408846 /* ApiClient.swift in Sources */,
 				B9C55F8128B8FAE200408846 /* Post.swift in Sources */,
-				B9C55F5128B7F02700408846 /* ContentView.swift in Sources */,
+				B9DE221028B92E16009DF98D /* CommentRow.swift in Sources */,
 				B9C55F4F28B7F02700408846 /* CBoynton_Summus_ChallengeApp.swift in Sources */,
+				B9DE220E28B92DBF009DF98D /* AuthorDetail.swift in Sources */,
 				B9C55F9428B912ED00408846 /* PostListViewModel.swift in Sources */,
 				B9C55F9628B919BF00408846 /* PostDetail.swift in Sources */,
 				B9C55F8E28B909C400408846 /* DataStore.swift in Sources */,
 				B9C55F9028B90E2600408846 /* PostRow.swift in Sources */,
 				B9C55F8728B8FC9B00408846 /* Album.swift in Sources */,
+				B9C55F9828B9207900408846 /* PostDetailViewModel.swift in Sources */,
+				B9DE221628B93342009DF98D /* AuthorDetailViewModel.swift in Sources */,
+				B9DE221228B931C0009DF98D /* AuthorLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

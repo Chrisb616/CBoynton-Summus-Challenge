@@ -11,12 +11,13 @@ class DataStore {
     
     // MARK: - Instance
     static let Instance = DataStore()
-    private init() {}
+    private init() {
+    }
     
     var albums = [Album]()
-    var comments = [Comment]()
+    var commentsLookup = [Int:[Comment]]()
     var photos = [Photo]()
-    var users = [User]()
+    var usersLookup = [Int: User]()
     
     func retrieveAllData(completion: @escaping ()->()) {
         ApiClient.Instance.getAlbums { albums, errorString in
@@ -27,7 +28,11 @@ class DataStore {
             ApiClient.Instance.getComments { comments, errorString in
                 print(errorString ?? "Comments retrieval successful")
                 
-                self.comments = comments
+                comments.forEach { comment in
+                    var commentGroup = self.commentsLookup[comment.id] ?? []
+                    commentGroup.append(comment)
+                    self.commentsLookup[comment.id] = commentGroup
+                }
                 
                 ApiClient.Instance.getPhotos { photos, errorString in
                     print(errorString ?? "Photos retrieval successful")
@@ -37,7 +42,9 @@ class DataStore {
                     ApiClient.Instance.getUsers { users, errorString in
                         print(errorString ?? "Users retrieval successful")
                         
-                        self.users = users
+                        users.forEach { user in
+                            self.usersLookup[user.id] = user
+                        }
                         
                         completion();
                     }

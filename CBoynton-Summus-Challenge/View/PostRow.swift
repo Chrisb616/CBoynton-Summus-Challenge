@@ -9,17 +9,13 @@ import SwiftUI
 
 struct PostRow: View {
     var post: Post
+    var author: User?
     
     var body: some View {
         VStack {
+            Text(author?.name ?? "User Not Found")
             Text(post.title).bold()
             Text(post.body)
         }
-    }
-}
-
-struct PostRow_Previews: PreviewProvider {
-    static var previews: some View {
-        Text("Preview")
     }
 }

@@ -8,6 +8,7 @@
 typealias ErrorString = String
 
 import Foundation
+import Combine
 
 class ApiClient {
     

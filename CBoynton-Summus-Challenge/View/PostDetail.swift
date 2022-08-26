@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct PostDetail: View {
+    @StateObject var viewModel: PostDetailViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct PostDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        PostDetail()
+        VStack {
+            Text(viewModel.post.title)
+            Text(viewModel.post.body)
+            NavigationLink {
+                AuthorDetail(viewModel: AuthorDetailViewModel(author: viewModel.author))
+            } label: {
+                AuthorLabel(author: viewModel.author)
+            }
+            List(viewModel.comments) { comment in
+                Text(comment.body)
+            }
+        }
     }
 }
