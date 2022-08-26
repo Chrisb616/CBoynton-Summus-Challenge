@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct PostRow: View {
-    var post: Post
-    var author: User?
+    var viewModel: PostRowViewModel
     
     var body: some View {
         VStack {
-            Text(author?.name ?? "User Not Found")
-            Text(post.title).bold()
-            Text(post.body)
+            Text(viewModel.author?.name ?? "User Not Found")
+            Text(viewModel.post.title).bold()
+            Text(viewModel.post.body)
         }
     }
 }

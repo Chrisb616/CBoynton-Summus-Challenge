@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct CommentRow: View {
-    var comment: Comment
+    @StateObject var viewModel: CommentRowViewModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(viewModel.comment.name)
+            Text(viewModel.author?.email ?? "User Not Found")
+            Text(viewModel.comment.body)
+        }
     }
 }

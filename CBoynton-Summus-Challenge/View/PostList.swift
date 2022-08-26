@@ -14,15 +14,9 @@ struct PostList: View {
         NavigationView {
             List(viewModel.posts) { post in
                 NavigationLink {
-                    PostDetail(
-                        viewModel: PostDetailViewModel(
-                            post: post,
-                            author: viewModel.author(forPost: post),
-                            comments: viewModel.comments(forPost: post)
-                        )
-                    )
+                    PostDetail(viewModel: PostDetailViewModel(post: post, author: viewModel.userLookup[post.userId]))
                 } label: {
-                    PostRow(post: post, author: viewModel.author(forPost: post))
+                    PostRow(viewModel: PostRowViewModel(post: post, author: viewModel.userLookup[post.userId]))
                 }
                 .navigationTitle("CBoynton Takehome")
             }

@@ -15,12 +15,14 @@ struct PostDetail: View {
             Text(viewModel.post.title)
             Text(viewModel.post.body)
             NavigationLink {
-                AuthorDetail(viewModel: AuthorDetailViewModel(author: viewModel.author))
+                if let author = viewModel.author {
+                    AuthorDetail(viewModel: AuthorDetailViewModel(author: author))
+                }
             } label: {
                 AuthorLabel(author: viewModel.author)
             }
-            List(viewModel.comments) { comment in
-                Text(comment.body)
+            List(viewModel.post.comments) { comment in
+                CommentRow(viewModel: CommentRowViewModel(comment: comment))
             }
         }
     }

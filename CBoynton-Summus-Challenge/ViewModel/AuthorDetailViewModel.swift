@@ -8,8 +8,8 @@
 import Foundation
 
 class AuthorDetailViewModel: ObservableObject {
-    init (author: User?) {
+    init (author: User) {
         self.author = author
     }
-    var author: User?
+    var author: User
 }

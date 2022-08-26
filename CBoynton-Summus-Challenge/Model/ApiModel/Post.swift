@@ -12,4 +12,13 @@ class Post: Identifiable, Decodable {
     let id: Int
     let title: String
     let body: String
+    
+    var comments = [Comment]()
+    
+    private enum CodingKeys: String, CodingKey {
+        case userId
+        case id
+        case title
+        case body
+    }
 }
